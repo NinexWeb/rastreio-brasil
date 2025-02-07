@@ -96,8 +96,7 @@ function App() {
           {/* Instructions */}
           <div className="mt-8 text-white text-center">
             <p className="text-sm opacity-80">
-              Exemplos de códigos: Correios (AA123456789BR) | Jadlog (12345678912345)
-              Desenvolvido Por NinexWeb
+              Exemplos de códigos: Correios (AA123456789BR) | Jadlog (12345678912345) BY NINEX
             </p>
           </div>
         </div>
