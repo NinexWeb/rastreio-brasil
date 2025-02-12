@@ -10,6 +10,7 @@ function App() {
     if (/^[A-Z]{2}\d{9}BR$/i.test(trackingCode)) {
       setCarrier('correios');
     } else if (/^\d{14}$/.test(trackingCode)) {
+       } else if (/^\d{11}$/.test(trackingCode)) {
       setCarrier('jadlog');
     } else {
       setCarrier('none');
