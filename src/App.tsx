@@ -18,7 +18,7 @@ function App() {
 
   const handleTrack = () => {
     if (carrier === 'correios') {
-      window.open(`https://rastreamento.correios.com.br/app/index.php?objeto=`, '_blank');
+      window.open(`https://rastreamento.correios.com.br/app/index.php?objeto=${trackingCode}`, '_blank');
     } else if (carrier === 'jadlog') {
       window.open(`https://www.jadlog.com.br/siteInstitucional/tracking.jad?cte=${trackingCode}`, '_blank');
     }
