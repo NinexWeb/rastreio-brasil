@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import { Package, Truck, Search } from 'lucide-react';
 
 function App() {
