@@ -7,10 +7,10 @@ function App() {
   const [carrier, setCarrier] = useState<'none' | 'correios' | 'jadlog'>('none');
 
   useEffect(() => {
-    // Detect carrier based on tracking code pattern
+    // Detectar transportadora com base no código
     if (/^[A-Z]{2}\d{9}BR$/i.test(trackingCode)) {
       setCarrier('correios');
-    } else if (/^\d{14}$/.test(codigo) || /^\d{11}$/.test(codigo)) {
+    } else if (/^\d{11}$/.test(trackingCode) || /^\d{14}$/.test(trackingCode)) {
       setCarrier('jadlog');
     } else {
       setCarrier('none');
@@ -97,7 +97,7 @@ function App() {
           {/* Instructions */}
           <div className="mt-8 text-white text-center">
             <p className="text-sm opacity-80">
-              Exemplos de códigos: Correios (AA123456789BR) | Jadlog (12345678912345) BY NINEX_OF
+              Exemplos de códigos: Correios (AA123456789BR) | Jadlog (12345678912345 ou 12345678901) BY NINEX_OF
             </p>
           </div>
         </div>
