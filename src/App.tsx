@@ -10,7 +10,7 @@ function App() {
     // Detect carrier based on tracking code pattern
     if (/^[A-Z]{2}\d{9}BR$/i.test(trackingCode)) {
       setCarrier('correios');
-    } else if (/^\d{14}$/.test(trackingCode)) {
+    } else if (/^\d{14}$/.test(codigo) || /^\d{11}$/.test(codigo)) {
       setCarrier('jadlog');
     } else {
       setCarrier('none');
